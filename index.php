@@ -12,21 +12,22 @@
   </head>
   <body>
     <div class="container">
+      <script src="script.js"></script>
       <div class="row mt-2">
         <div class="col-6 coffee-list d-flex flex-column justify-content-around">
-          <div class="coffee-item">
+          <div class="coffee-item" onclick="cookCoffee('Американо', 50, this)">
             <img src="img/americano.png" alt="Американо">
             <span>Американо - 50 руб.</span>
           </div>
-          <div class="coffee-item">
+          <div class="coffee-item" onclick="cookCoffee('Капучино', 92, this)">
             <img src="img/cappuccino.png" alt="Капучино">
             <span>Капучино - 92 руб.</span>
           </div>
-          <div class="coffee-item">
+          <div class="coffee-item" onclick="cookCoffee('Эспрессо', 66, this)">
             <img src="img/espresso.png" alt="Эспрессо">
             <span>Эспрессо - 66 руб.</span>
           </div>
-          <div class="coffee-item">
+          <div class="coffee-item"onclick="cookCoffee('Латте', 128, this)" >
             <img src="img/latte.jpg" alt="Латте">
             <span>Латте - 128 руб.</span>
           </div>
@@ -37,7 +38,7 @@
               <div class="display">
                <span>Выберите кофе</span>
                <div class="progress mt-2">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
                </div>
               </div>
               <div class="cup mt-3">
@@ -62,6 +63,7 @@
       </div>
     </div>
     <!-- Optional JavaScript -->
+    <skript src="lesson.js"></skript>
     <skript src="script.js"></skript>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
